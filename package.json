@@ -1,5 +1,5 @@
 {
-  "name": "booking-resto",
+  "name": "restaurant",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@clerk/nextjs": "^4.25.3",
     "@headlessui/react": "^1.7.17",
     "@hookform/resolvers": "^3.3.1",
     "@lottiefiles/react-lottie-player": "^3.5.3",
