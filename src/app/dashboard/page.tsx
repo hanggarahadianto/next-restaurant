@@ -10,7 +10,7 @@ import React from "react";
 export default async function DashboardPage() {
   const restaurantData: RestaurantMaping[] = await getRestaurantData();
   return (
-    <div suppressHydrationWarning={true}>
+    <div>
       <LandingPage />
       {/* <DasboardSection /> */}
       <div className="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 px-8 py-8">
