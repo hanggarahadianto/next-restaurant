@@ -25,6 +25,6 @@ export const getRestaurantData = async () => {
   }
 
   const dataRestaurant = await res.json();
-  // console.log(dataRestaurant);
+  console.log(dataRestaurant.data.image);
   return dataRestaurant.data;
 };

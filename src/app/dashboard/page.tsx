@@ -1,5 +1,3 @@
-// "use client";
-
 import LandingPage from "@/components/landingpage/LandingPage";
 import RestaurantCard from "@/components/restaurant/restaurantCard";
 import { RestaurantMaping } from "@/types/restaurant";

@@ -7,6 +7,7 @@ import { getMenuByRestaurantId } from "@/utils/api/menu.api";
 import { restaurantDetails } from "@/utils/api/restaurant.api";
 import { getTagByRestaurantId } from "@/utils/api/tag.api";
 import { PhoneCall } from "lucide-react";
+import Image from "next/image";
 import React, { FC } from "react";
 
 interface RestaurantProps {
@@ -23,10 +24,12 @@ const RestaurantPage: FC<RestaurantProps> = async ({ params }) => {
 
   return (
     <div>
-      <img
+      <Image
         className="w-full  h-48 object-cover transition-transform duration-300 transform hover:scale-110"
         src={restaurantData.data.image}
-        alt={restaurantData.data.name}
+        height="1000"
+        width="1000"
+        alt="logo"
       />
       <div className="">
         <div className="flex justify-center content-center bg-red-50 px-8 py-4 ">
@@ -59,11 +62,13 @@ const RestaurantPage: FC<RestaurantProps> = async ({ params }) => {
               {menuData.map((Menu) => (
                 <div key={Menu.ID} className="">
                   <div className="px-4 py-2 border-2 w-40 rounded-3xl content-center mr-2 overflow-hidden ">
-                    <img
+                    <Image
+                      className="object-cover rounded-t-lg content-center w-36 h-28"
                       src={Menu.image}
-                      className="w-36 h-28 rounded-t-lg content-center object-cover"
+                      height="100"
+                      width="100"
+                      alt="logo"
                     />
-
                     <p className="text-sm font-semibold mt-3">{Menu.title}</p>
                     {/* <p>{Menu.content}</p> */}
                   </div>
