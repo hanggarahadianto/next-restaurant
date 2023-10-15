@@ -5,13 +5,14 @@ import {
   Twitter,
   YoutubeIcon,
 } from "lucide-react";
+import Logo from "../navbar/Logo";
 
 export default function Footer() {
   return (
     <div className="px-8 py-4 shadow-l bg-orange-50">
       <div className="b grid grid-cols-2">
         <div className="w-96 px-8 py-4 order-b-2 border-gray-100">
-          <img src="/images/avika.png" className="w-20 h-12" />
+          <Logo />
           <p className="py-8">
             Avika's powers the world’s best restaurants, using technology to
             imagine the future of hospitality.

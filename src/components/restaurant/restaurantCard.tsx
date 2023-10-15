@@ -14,14 +14,8 @@ const RestaurantCard: React.FC<RestaurantProps> = (data: RestaurantProps) => {
     <div>
       <Link href={`/restaurants/${data.ID}`}>
         <div className="md:max-w-md md:mx-auto md:h-96 shadow-md rounded-xl overflow-hidden relative">
-          {/* <CldImage src={data.image} alt={data.name} width="960" height="600" /> */}
-
           <Image src={data.image} alt={data.name} width="960" height="600" />
-          {/* <img
-            className="w-full h-48 object-cover rounded-lg transition-transform duration-300 transform hover:scale-110"
-            src={data.image}
-            alt={data.name}
-          /> */}
+
           <div className="p-4">
             <div className="flex items-center justify-between mb-2">
               <h3 className="text-xl font-semibold mb-2">{data.name}</h3>
